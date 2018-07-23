@@ -1,0 +1,15 @@
+<div class="col-xs-12 col-sm-12 col-md-4">
+	<div class="emp-box">
+		<div class="emp-detail col-xs-12 col-sm-12 col-md-8">
+			<h3> {{ contact.firstName }} {{ contact.lastName }}  <span class="status" [ngClass]="{'active': contact.status == 'active' , 'inactive': contact.status == 'inactive'} "></span></h3>
+			<label>{{ contact.designation }}, {{ contact.department }}</label>
+            <span class="emp-contact"><i class="glyphicon glyphicon-map-marker"></i>{{ contact.city }}, {{ contact.state }}, {{ contact.country }}</span>
+            <button class="btn btn-primary" type="button" (click)="viewContactDetail(index)">View Profile</button>
+             <button class="btn btn-danger" type="button" (click)="deleteContact(index)">Delete Profile</button>
+		</div>
+		<div class="emp-img col-xs-12 col-sm-12 col-md-4">
+			<img src="../../assets/images/default_profile.png" class="img-responsive">
+		</div>
+	</div>
+</div>
+

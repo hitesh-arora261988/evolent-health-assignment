@@ -1,0 +1,26 @@
+   
+<div class="jumbotron">
+  <div class="row">
+      <div class="col-md-4 col-xs-12 col-sm-6 col-lg-4">
+          <img src="../../assets/images/default_profile.png" alt="stack photo" class="img-responsive">
+      </div>
+      <div class="col-md-8 col-xs-12 col-sm-6 col-lg-8">
+          <div class="container" style="border-bottom:1px solid black">
+            <h2>{{ contact.firstName }} {{ contact.lastName }}</h2>
+          </div>
+            <hr>
+          <ul class="container details">
+          	 <li><p><span class="glyphicon glyphicon-user one" style="width:50px;"></span>{{ contact.designation }}, {{ contact.department }}</p></li>
+            <li><p><span class="glyphicon glyphicon-earphone one" style="width:50px;"></span>{{ contact.phone }}</p></li>
+            <li><p><span class="glyphicon glyphicon-envelope one" style="width:50px;"></span><a href="mailto:{{ contact.email }}">{{ contact.email }}</a></p></li>
+            <li><p><span class="glyphicon glyphicon-map-marker one" style="width:50px;"></span>{{ contact.city }}, {{ contact.state }}, {{ contact.country }}</p></li>
+            <li><p><span class="glyphicon glyphicon-time one" style="width:50px;"></span>{{ contact.status }}</p></li>
+          </ul>
+          <div class="row">
+          	<div class="col-xs-12">
+            <button class="btn btn-primary" (click)="onEditDetails()">Edit Details</button>	
+            </div>
+          </div>
+      </div>
+  </div>
+</div>

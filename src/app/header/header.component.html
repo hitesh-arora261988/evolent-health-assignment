@@ -1,0 +1,22 @@
+ <!-- Fixed navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="javascript:void(0)"  routerLink="/">
+         <img src="../../assets/images/logo.png" class="img-responsive" alt="Evolent Health">
+      </a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"><a routerLink="/">Home</a></li>
+        <li routerLinkActive="active" class="dropdown" appDropdown>
+            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contacts <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="javascript:void(0)" routerLink="/contactList">Show Contacts</a></li>
+                <li><a href="javascript:void(0)" routerLink="/addContact">Add Contacts</a></li>
+              </ul>
+        </li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>

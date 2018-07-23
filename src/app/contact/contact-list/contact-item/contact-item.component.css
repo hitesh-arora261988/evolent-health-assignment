@@ -1,0 +1,53 @@
+.emp-box{
+   padding: 10px;
+    background-color: #f8f8f8;
+    min-height: 150px;
+    border: 2px solid #f8f8f8;
+    display: inline-block;
+    height: auto;
+    box-shadow: 1px 1px 1px 1px #ccc;
+    width: 100%;
+    margin-top:10px;
+ }
+ .emp-detail,.emp-img{
+ 	padding: 0px;
+ }
+ .emp-detail button{
+   margin-top: 15px;
+   padding: 4px 4px;
+   border-radius: 0px;
+   font-size: 14px;
+   margin-right: 10px;
+ }
+ .emp-box h3{
+ 	margin:0px;
+ }
+.emp-detail span{
+  display: inline-block;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+.emp-detail .emp-contact{
+	display: block;
+}
+.emp-box label{
+	display: block;
+	margin: 0px 0px 5px 0px;
+}
+.emp-box .glyphicon{
+	margin-right: 5px;
+}
+span.status {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    position: relative;
+    top: 3px;
+    margin-left: 5px;
+}
+span.status.active{
+	background-color: #01B53A;
+}
+span.status.inactive{
+	background-color: #DE2910;
+}

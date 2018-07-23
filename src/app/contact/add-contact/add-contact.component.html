@@ -1,0 +1,163 @@
+<div class="container">
+ <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">	
+  <div class="emp-form">	
+   <form (ngSubmit)="onAddContact(f)" #f="ngForm">	
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12">
+			<h3>Add Contact Information</h3>
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-6">
+				<label for="empName">First Name <span class="not-blank">*</span></label>
+				<input 
+			 	  type="text" 
+			 	  class="form-control" 
+			 	  name="firstName"
+			 	  ngModel
+			 	  required
+			 	  #firstName="ngModel"
+			 	  placeholder="First Name" 
+			 	  />
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-6">
+				<label for="empName">Last Name <span class="not-blank">*</span></label>
+				<input 
+			 	  type="text" 
+			 	  class="form-control" 
+			 	  name="lastName"
+			 	  ngModel
+			 	  required
+			 	  #lastName="ngModel"
+			 	  placeholder="Last Name"
+			 	  />
+			</div>
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-6">
+				<label for="empName">Email <span class="not-blank">*</span></label>
+				<input 
+			 	  type="text" 
+			 	  class="form-control" 
+			 	  name="email"
+			 	  ngModel
+			 	  required
+			 	  #email="ngModel"
+			 	  email
+			 	  placeholder="email" 
+			 	  />
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-6">
+				<label for="empName">Phone <span class="not-blank">*</span></label>
+				<input 
+			 	  type="text" 
+			 	  pattern="[0-9]+"
+			 	  class="form-control" 
+			 	  name="phone"
+			 	  ngModel
+			 	  required
+			 	  #phone="ngModel"
+			 	  placeholder="phone"
+			 	  maxlength="10" 
+			 	  />
+			</div>
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-6">
+				<label for="empDesg">Designation <span class="not-blank">*</span></label>
+				<input 
+			 	  type="text" 
+			 	  class="form-control" 
+			 	  name="designation"
+			 	  ngModel
+			 	  required
+			 	  #designation="ngModel"
+			 	  placeholder="designation" 
+			 	  />
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-6">
+				<label for="empDesg">Department <span class="not-blank">*</span></label>
+				<input 
+			 	  type="text" 
+			 	  class="form-control" 
+			 	  name="department"
+			 	  ngModel
+			 	  required
+			 	  #department="ngModel"
+			 	  placeholder="Department"
+			 	  />
+			</div>
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-6">
+				<label for="empDesg">Status <span class="not-blank">*</span></label>
+				<select class="form-control"  [ngModel]="status" name="status">
+            			<option value="active">Active</option>
+            			<option value="inactive">Inactive</option>
+          		</select>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-6">
+				<label for="empDesg">city<span class="not-blank">*</span></label>
+				<input 
+			 	  type="text" 
+			 	  class="form-control" 
+			 	  name="city"
+			 	  ngModel
+			 	  required
+			 	  #city="ngModel"
+			 	  placeholder="City"
+			 	  />
+			</div>
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-6">
+				<label for="empDesg">State <span class="not-blank">*</span></label>
+				<input 
+			 	  type="text" 
+			 	  class="form-control" 
+			 	  name="state"
+			 	  ngModel
+			 	  required
+			 	  #state="ngModel"
+			 	  placeholder="state"
+			 	  />
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-6">
+				<label for="empDesg">Country <span class="not-blank">*</span></label>
+				<input 
+			 	  type="text" 
+			 	  class="form-control" 
+			 	  name="country"
+			 	  ngModel
+			 	  required
+			 	  #country="ngModel"
+			 	  placeholder="country"
+			 	  />
+			</div>
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<button 
+				  class="btn btn-primary"
+				  [disabled]="!f.valid"
+				 >
+				 	Add Contact
+				 </button>
+			</div>
+		</div>
+	</div>
+  </form>
+  </div>
+ </div>
+</div>

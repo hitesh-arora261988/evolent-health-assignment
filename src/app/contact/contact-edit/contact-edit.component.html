@@ -1,0 +1,125 @@
+<div class="container">
+ <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">	
+  <div class="emp-form">	
+   <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12">
+			<h3>Edit Contact Information</h3>
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-6">
+				<label for="empName">First Name <span class="not-blank">*</span></label>
+				<input 
+			 	  type="text" 
+			 	  class="form-control"  
+			 	  formControlName="firstName"
+			 	  />
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-6">
+				<label for="empName">Last Name <span class="not-blank">*</span></label>
+				<input 
+			 	  type="text" 
+			 	  class="form-control"  
+			 	  formControlName="lastName"
+			 	  />
+			</div>
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-6">
+				<label for="empName">Email <span class="not-blank">*</span></label>
+				<input 
+			 	  type="email" 
+			 	  class="form-control"  
+			 	  formControlName="email"
+			 	  />
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-6">
+				<label for="empName">Phone <span class="not-blank">*</span></label>
+				<input 
+			 	  type="text" 
+			 	  class="form-control"  
+			 	  formControlName="phone"
+			 	  />
+			</div>
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-6">
+				<label for="empDesg">Designation <span class="not-blank">*</span></label>
+				<input 
+			 	  type="text" 
+			 	  class="form-control"  
+			 	  formControlName="designation"
+			 	  />
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-6">
+				<label for="empDesg">Department <span class="not-blank">*</span></label>
+				<input 
+			 	  type="text" 
+			 	  class="form-control"  
+			 	  formControlName="department"
+			 	  />
+			</div>
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-6">
+				<label for="empDesg">Status <span class="not-blank">*</span></label>
+				<select class="form-control"   formControlName="status">
+            			<option value="active">Active</option>
+            			<option value="inactive">Inactive</option>
+          		</select>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-6">
+				<label for="empDesg">city<span class="not-blank">*</span></label>
+				<input 
+			 	  type="text" 
+			 	  class="form-control"  
+			 	  formControlName="city"
+			 	  />
+			</div>
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-6">
+				<label for="empDesg">State <span class="not-blank">*</span></label>
+				<input 
+			 	  type="text" 
+			 	  class="form-control"  
+			 	  formControlName="state"
+			 	  />
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-6">
+				<label for="empDesg">Country <span class="not-blank">*</span></label>
+				<input 
+			 	   type="text" 
+			 	  class="form-control"  
+			 	  formControlName="country"
+			 	  />
+			</div>
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<button 
+				  class="btn btn-primary"
+				  [disabled]="!contactForm.valid"
+				 >
+				 	Update
+				 </button>
+				  <button type="button" class="btn btn-danger" (click)="onCancel()">Cancel</button>
+			</div>
+		</div>
+	</div>
+  </form>
+  </div>
+ </div>
+</div>

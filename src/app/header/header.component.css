@@ -1,0 +1,12 @@
+.navbar-brand>img {
+    display: block;
+    width: auto;
+    height: 45px;
+}
+.navbar{
+	min-height: 75px;
+}
+
+.navbar-nav>li>a{
+	line-height: 43px;
+}

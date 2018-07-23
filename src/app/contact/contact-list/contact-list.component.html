@@ -1,0 +1,9 @@
+<div class="emp-list-container">
+	<div class="row">
+	<app-contact-item 
+	  *ngFor="let contactList of contacts; let i=index"
+	  [contact]= "contactList"
+	  [index] ="i">	
+	  </app-contact-item>
+	</div>
+</div>	
